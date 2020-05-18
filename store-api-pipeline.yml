@@ -293,7 +293,7 @@ Resources:
             TemplatePath: !Join
             - ''
             - - 'StoreAPI-BuildArtifact'
-              - '::api/store-api-output.yaml'
+              - '::api/store-api-output.yml'
             ActionMode: CHANGE_SET_REPLACE
             Capabilities: CAPABILITY_IAM
             ChangeSetName: pipeline-changeset
