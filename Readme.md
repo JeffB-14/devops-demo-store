@@ -1,4 +1,4 @@
-1. clone repo: https://github.com/aws-samples/aws-codepipeline-codebuild-with-postman
+1. clone repo: https://github.com/JeffB-14/devops-demo-store
 
 2. open terminal
 
@@ -25,7 +25,7 @@ aws cloudformation create-stack --stack-name store-api-pipeline \
 --parameters \
 ParameterKey=BucketRoot,ParameterValue=$myBucket \
 ParameterKey=GitHubBranch,ParameterValue=master \
-ParameterKey=GitHubRepositoryName,ParameterValue=aws-codepipeline-codebuild-with-postman \
+ParameterKey=GitHubRepositoryName,ParameterValue=devops-demo-store \
 ParameterKey=GitHubToken,ParameterValue=$GitHubToken \
 ParameterKey=GitHubUser,ParameterValue=JeffB-14 \
 --capabilities CAPABILITY_NAMED_IAM
