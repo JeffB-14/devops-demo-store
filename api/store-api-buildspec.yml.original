@@ -2,10 +2,11 @@ version: 0.2
 phases:
   install:
     commands:
-      - aws cloudformation package --template-file api/store-api.yml
-                                   --s3-bucket demo-store-api
+      - cd api
+      - aws cloudformation package --template-file store-api.yml
+                                   --s3-bucket <REPLACE_ME_WITH_UNIQUE_BUCKET_NAME>
                                    --s3-prefix api-code
-                                   --output-template-file api/store-api-output.yml
+                                   --output-template-file store-api-output.yml
 artifacts:
   type: zip
   files:
